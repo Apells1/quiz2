@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:SwiperNoSwiping" mc:Ignorable="d" x:Class="SwiperNoSwiping.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label x:Name="theLabel" Text="Flower Table" HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <local:SwipeContainer Swipe="OnSwiped" 
+         HorizontalOptions="Center" 
+         VerticalOptions="CenterAndExpand">
+                <Image x:Name="theImage" Source="flower_box.jpg" Aspect="AspectFit"
+                       HeightRequest="{OnPlatform iOS=300, Android=250}"
+                       HorizontalOptions="Center" />
+
+        </local:SwipeContainer>
+
+    </StackLayout>
+</ContentPage>
